@@ -8,7 +8,8 @@ This is a Flask Web Application for displaying items for a sports store! This is
 # Usage
 ## Note, it is recommended to set up an Anaconda environment to get this app start running
 
-1. Fire up an Anaconda Prompt, use the following command to create a virtual environment. (For example, I name this project as itemcatalog_project) conda create -n itemcatalog_project --file itemcatalog_env.yml
+1. Fire up an Anaconda Prompt, use the following command to create a virtual environment.
+    (For example, I name this project as itemcatalog_project) conda create -n itemcatalog_project --file itemcatalog_env.yml
 
 # Acknowledgement
 
