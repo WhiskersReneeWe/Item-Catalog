@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ item.name }}</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'main.css') }}">
+</head>
+<body>
+	<div class="container">
+	    <h1>{{ item.name }}</h1>
+	    <p>{{ item.description }}</p> 
+    </div> 
+
+    <div class="category-item__controls">
+				{% if user_id == item.user_id %}
+					<a href="{{url_for('Editcateitem', cate_name = item.category.name, item_id = item.id)}}" class="controls__edit">Edit</a>
+
+					<a href="{{url_for('Deleteitem', cate_name = item.category.name, item_id = item.id)}}" class="controls__delete">Delete</a>
+				{% endif %}
+	</div>
+
+</body>
+</html>

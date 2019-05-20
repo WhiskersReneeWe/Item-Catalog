@@ -1,0 +1,35 @@
+{% extends "ADD_layout.html" %}
+
+{% block content %}
+
+	<div class="row">
+		<div class="category-item column">
+			<h6 class="category-item__header">
+				<span class="header__title"></span>
+				<span class="header__bar"></span>
+			</h6>
+			<form action="#" method="post" class="category-item__form">
+				<fieldset>
+					<label for="" class="form__label">Name:</label>
+					<input type="text" name="name" value="{{item.name}}" class="form__input">
+					<label for="" class="form__label">Description:</label>
+					<textarea name="description" id="" cols="30" rows="10" class="form__textarea">{{item.description}}</textarea>
+					<label for="" class="form__label">Category:</label>
+					<select class="form__select" name="category">
+						{% for cate in cates %}
+							{% if item.category_id == cate.id %}
+								<option selected value="{{cate.id}}">{{cate.name}}</option>
+							{% else %}
+								<option value="{{cate.id}}">{{cate.name}}</option>
+							{% endif %}
+						{% endfor %}
+					</select>
+				</fieldset>
+				<a href="{{url_for('Showcateitems', cate_name = item.category.name)}}" class="button button-outline">Back</a>
+				<input type="submit" value="Save">
+				<p class="flash__message"></p>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}

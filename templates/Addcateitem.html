@@ -1,0 +1,38 @@
+{% extends "ADD_layout.html" %}
+
+{% block content %}
+
+	<div class="row">
+		<div class="category-item column">
+			<h6 class="category-item__header">
+				<span class="header__title">Add New Item</span>
+				<span class="header__bar"></span>
+			</h6>
+			<form action="#" method="post" class="category-item__form">
+				<fieldset>
+					<label for="" class="form__label">Name:</label>
+					<input type="text" name="name" class="form__input">
+					<label for="" class="form__label">Description:</label>
+					<textarea name="description" id="" cols="30" rows="10" class="form__textarea"></textarea>
+					<label for="" class="form__label">Category:</label>
+					<select class="form__select" name="category">
+						{% for cate in cates %}
+							<option value="{{cate.id}}">{{cate.name}}</option>
+						{% endfor %}
+					</select>
+				</fieldset>
+				<input type="submit" value="add item">
+				{% with flash_messages = get_flashed_messages() %}
+                    {% if flash_messages %}
+                        <ul>
+                        {% for flash_message in flash_messages %}
+                        <li> <strong> {{ flash_message }} </strong> </li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+			</form>
+		</div>
+	</div>
+
+{% endblock %}
