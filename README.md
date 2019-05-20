@@ -27,4 +27,5 @@ This is a Flask Web Application for displaying items for a sports store! This is
 # Acknowledgement
 
 * Udacity Mentor Tim Nelson
+* Udacity Full Stack Nanodegree group
 * [Cited this for various aspects of my development process](https://github.com/rrjoson/udacity-item-catalog)
