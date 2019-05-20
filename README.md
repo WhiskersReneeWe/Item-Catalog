@@ -12,10 +12,10 @@ The webpage design is at its bare minimum because the focus of this project is o
 ## Note, it is recommended to set up an Anaconda environment to get this app start running. 
 
 
-0. Download all files in this repository to your local computer and store them in one directory.
+0. Download all files from this repository to your local computer and store them in one directory.
 1. Fire up an Anaconda Prompt, use the following command to create a virtual environment.
-    * cd `your local directory` (change the working directory)
-    * conda create -n itemcatalog_project --file itemcatalog_env.yml (For example, I name this project as itemcatalog_project)
+    * cd `your local directory` (change the working directory to where you store all the downloaded files in step 0)
+    * conda create -n itemcatalog_project --file itemcatalog_env.yml (This creates a virtual environment named itemcatalog_project using python packages within itemcatalog_env.yml)
 
 
 2. run the following commands,
