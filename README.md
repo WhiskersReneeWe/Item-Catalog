@@ -18,6 +18,8 @@ This is a Flask Web Application for displaying items for a sports store! This is
 4. When it is up and running, go to http://127.0.0.1:5000
 5. The display should be like this,
 
+![itemHome](https://user-images.githubusercontent.com/43501958/57992640-180ae500-7a6a-11e9-9467-1d80a7bdf0a1.JPG)
+
 
 # Acknowledgement
 
