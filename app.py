@@ -22,6 +22,7 @@ from flask import (Flask,
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import scoped_session
 from sqlalchemy import create_engine
+from sqlalchemy import desc as order_desc
 from sqlalchemy.sql import func
 from datetime import datetime
 from db_setup import (Base,
@@ -66,10 +67,9 @@ def getUserID(email):
 @app.route('/')
 @app.route('/catalog')
 def home():
-    items = session.query(Item).limit(5).all()
+    items = session.query(Item).order_by(order_desc(Item.date_added)).limit(5).all()
     n_items = len(items)
     cates = session.query(Category).all()
-
     user = login_session.get('username')
     return render_template("home.html", cates=cates, items=items, n=n_items, user = user)
 
