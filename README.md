@@ -3,7 +3,9 @@
 
 # Introduction
 
-This is a Flask Web Application for displaying items for a sports store! This is a very basic web app where a user can add, edit, or delete an item of his/her chosen category. This web app allows a user to sign in and out but only using Google accounts. I use OAuth to authenticate users to grant them the capabilities to add, edit, and delete items they have created before. 
+This is a Flask Web Application that displays items for a sports store! This is a very basic web app where a user can add, edit, or delete an item within his/her chosen category. This web app allows a user sign in and sign out but only using Google accounts. I use OAuth to authenticate users to grant them the capabilities to add, edit, and delete items they have created before. 
+
+The webpage design is at its bare minimum because the focus of this project is on its backend. I will learn more about the frontend design later on.
 
 
 # Usage
