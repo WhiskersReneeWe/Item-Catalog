@@ -9,7 +9,15 @@ This is a Flask Web Application for displaying items for a sports store! This is
 ## Note, it is recommended to set up an Anaconda environment to get this app start running
 
 1. Fire up an Anaconda Prompt, use the following command to create a virtual environment.
-    (For example, I name this project as itemcatalog_project) conda create -n itemcatalog_project --file itemcatalog_env.yml
+    * (For example, I name this project as itemcatalog_project) conda create -n itemcatalog_project --file itemcatalog_env.yml
+
+2. Download all files to your local computer and store them in one directory.
+3. run the following commands,
+   * `python app.py` 
+   
+4. When it is up and running, go to http://127.0.0.1:5000
+5. The display should be like this,
+
 
 # Acknowledgement
 
