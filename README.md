@@ -3,10 +3,11 @@
 
 # Introduction
 
-This is a Flask Web Application for displaying items for a sports store! This is a very basic web app where a user can add, edit, or delete an item of his/her chosen category. This web app allows a user to sign in and out but only using Google accounts. I use OAuth to authenticate users to grant them the capabilities to add, edit, and delete items they created.
+This is a Flask Web Application for displaying items for a sports store! This is a very basic web app where a user can add, edit, or delete an item of his/her chosen category. This web app allows a user to sign in and out but only using Google accounts. I use OAuth to authenticate users to grant them the capabilities to add, edit, and delete items they have created before. 
+
 
 # Usage
-## Note, it is recommended to set up an Anaconda environment to get this app start running
+## Note, it is recommended to set up an Anaconda environment to get this app start running. 
 
 
 0. Download all files in this repository to your local computer and store them in one directory.
