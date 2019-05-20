@@ -1,5 +1,5 @@
 # Item Catalog - A Udacity project 
-## This is my second Full Stack learning experience using Flask ([First Experience here](https://github.com/WhiskersReneeWe/keras_image_classifer))
+## This is my second Full Stack Project-Based learning experience using Flask ([First Experience here](https://github.com/WhiskersReneeWe/keras_image_classifer))
 
 # Introduction
 
